@@ -67,7 +67,7 @@
                                     <span>Lunch & refreshments</span>
                                 </li>
                             </ul>
-                            <a href="https://ti.to/phptek/phptek-2026/with/early-bird-full-3-day-conference"
+                            <a href="https://ti.to/phptek/jstek-2026/with/early-bird-full-3-day-conference"
                                class="block bg-tek-orange-700 dark:bg-tek-orange-600 text-white text-center py-2 rounded-lg font-medium hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all">
                                 Register Now
                             </a>
@@ -112,7 +112,7 @@
                                     <span>Lunch & refreshments</span>
                                 </li>
                             </ul>
-                            <a href="https://ti.to/phptek/phptek-2026/with/early-bird-two-days"
+                            <a href="https://ti.to/phptek/jstek-2026/with/early-bird-two-days"
                                class="block bg-tek-blue-700 dark:bg-tek-blue-600 text-white text-center py-2 rounded-lg font-medium hover:bg-tek-blue-800 dark:hover:bg-tek-blue-700 transition-all">
                                 Register Now
                             </a>
@@ -157,7 +157,7 @@
                                     <span>Lunch & refreshments</span>
                                 </li>
                             </ul>
-                            <a href="https://ti.to/phptek/phptek-2026/with/early-bird-one-day"
+                            <a href="https://ti.to/phptek/jstek-2026/with/early-bird-one-day"
                                class="block bg-tek-blue-700 dark:bg-tek-blue-600 text-white text-center py-2 rounded-lg font-medium hover:bg-tek-blue-800 dark:hover:bg-tek-blue-700 transition-all">
                                 Register Now
                             </a>
@@ -216,7 +216,7 @@
                                     <span>Lunch & refreshments</span>
                                 </li>
                             </ul>
-                            <a href="https://ti.to/phptek/phptek-2026/with/full-conference-full-3-day-conference"
+                            <a href="https://ti.to/phptek/jstek-2026/with/full-conference-full-3-day-conference"
                                class="block bg-tek-blue-700 dark:bg-tek-blue-600 text-white text-center py-2 rounded-lg font-medium hover:bg-tek-blue-800 dark:hover:bg-tek-blue-700 transition-all">
                                 Register Now
                             </a>
@@ -261,7 +261,7 @@
                                     <span>Lunch & refreshments</span>
                                 </li>
                             </ul>
-                            <a href="https://ti.to/phptek/phptek-2026/with/conference-2-days"
+                            <a href="https://ti.to/phptek/jstek-2026/with/conference-2-days"
                                class="block bg-tek-blue-700 dark:bg-tek-blue-600 text-white text-center py-2 rounded-lg font-medium hover:bg-tek-blue-800 dark:hover:bg-tek-blue-700 transition-all">
                                 Register Now
                             </a>
@@ -306,7 +306,7 @@
                                     <span>Lunch & refreshments</span>
                                 </li>
                             </ul>
-                            <a href="https://ti.to/phptek/phptek-2026/with/conference-1-day"
+                            <a href="https://ti.to/phptek/jstek-2026/with/conference-1-day"
                                class="block bg-tek-blue-700 dark:bg-tek-blue-600 text-white text-center py-2 rounded-lg font-medium hover:bg-tek-blue-800 dark:hover:bg-tek-blue-700 transition-all">
                                 Register Now
                             </a>
@@ -362,7 +362,7 @@
                                     <span>All recordings after conference</span>
                                 </li>
                             </ul>
-                            <a href="https://ti.to/phptek/phptek-2026/with/virtual-ticket-live-stream-access"
+                            <a href="https://ti.to/phptek/jstek-2026/with/virtual-ticket-live-stream-access"
                                class="inline-block bg-tek-blue-700 dark:bg-tek-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-tek-blue-800 dark:hover:bg-tek-blue-700 transition-all">
                                 Get Virtual Access
                             </a>
