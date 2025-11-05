@@ -20,26 +20,16 @@
                                         class="bg-white dark:bg-[#1e2332] rounded-xl shadow-md dark:shadow-black/50 {{ $getCardClasses($level) }} cursor-pointer transition-transform hover:scale-105"
                                         onclick="openSponsorModal('{{ $sponsor->uuid }}')"
                                         data-sponsor-uuid="{{ $sponsor->uuid }}">
-                                        <div class="flex flex-col items-center justify-center h-full">
-                                            @if($sponsor->logo)
-                                                @if(str_starts_with($sponsor->logo, 'http'))
-                                                    <img src="{{ $sponsor->logo }}" alt="{{ $sponsor->name }}"
-                                                         class="max-h-16 max-w-full object-contain mb-2">
-                                                @elseif(file_exists(public_path($sponsor->logo)))
-                                                    <img src="{{ asset($sponsor->logo) }}" alt="{{ $sponsor->name }}"
-                                                         class="max-h-16 max-w-full object-contain mb-2">
-                                                @else
-                                                    <div
-                                                        class="w-16 h-16 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-2">
-                                                        <span
-                                                            class="text-xs font-bold text-gray-500 dark:text-slate-400">LOGO</span>
-                                                    </div>
-                                                @endif
+                                        <div class="flex flex-col items-center justify-center p-4 h-full">
+                                            @if($sponsor->logo_url)
+                                                <div class="w-full flex items-center justify-center mb-3 min-h-[120px]">
+                                                    <img src="{{ $sponsor->logo_url }}"
+                                                         alt="{{ $sponsor->name }}"
+                                                         class="max-h-28 w-auto object-contain">
+                                                </div>
                                             @else
-                                                <div
-                                                    class="w-16 h-16 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-2">
-                                                    <span
-                                                        class="text-xs font-bold text-gray-500 dark:text-slate-400">LOGO</span>
+                                                <div class="w-full flex items-center justify-center mb-3 min-h-[120px]">
+                                                    <span class="text-xs text-gray-400">No Logo</span>
                                                 </div>
                                             @endif
                                             <div class="text-center">
@@ -53,32 +43,23 @@
                                 @endforeach
                             </div>
                         @else
-                            <div class="grid {{ $getGridClasses($level) }} gap-6 justify-items-center" style="max-width: fit-content;">
+                            <div class="grid {{ $getGridClasses($level) }} gap-6 justify-items-center"
+                                 style="max-width: fit-content;">
                                 @foreach($sponsors as $sponsor)
                                     <div
                                         class="bg-white dark:bg-[#1e2332] rounded-xl shadow-md dark:shadow-black/50 {{ $getCardClasses($level) }} cursor-pointer transition-transform hover:scale-105"
                                         onclick="openSponsorModal('{{ $sponsor->uuid }}')"
                                         data-sponsor-uuid="{{ $sponsor->uuid }}">
-                                        <div class="flex flex-col items-center justify-center h-full">
-                                            @if($sponsor->logo)
-                                                @if(str_starts_with($sponsor->logo, 'http'))
-                                                    <img src="{{ $sponsor->logo }}" alt="{{ $sponsor->name }}"
-                                                         class="max-h-16 max-w-full object-contain mb-2">
-                                                @elseif(file_exists(public_path($sponsor->logo)))
-                                                    <img src="{{ asset($sponsor->logo) }}" alt="{{ $sponsor->name }}"
-                                                         class="max-h-16 max-w-full object-contain mb-2">
-                                                @else
-                                                    <div
-                                                        class="w-16 h-16 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-2">
-                                                        <span
-                                                            class="text-xs font-bold text-gray-500 dark:text-slate-400">LOGO</span>
-                                                    </div>
-                                                @endif
+                                        <div class="flex flex-col items-center justify-center p-4 h-full">
+                                            @if($sponsor->logo_url)
+                                                <div class="w-full flex items-center justify-center mb-3 min-h-[120px]">
+                                                    <img src="{{ $sponsor->logo_url }}"
+                                                         alt="{{ $sponsor->name }}"
+                                                         class="max-h-28 w-auto object-contain">
+                                                </div>
                                             @else
-                                                <div
-                                                    class="w-16 h-16 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-2">
-                                                    <span
-                                                        class="text-xs font-bold text-gray-500 dark:text-slate-400">LOGO</span>
+                                                <div class="w-full flex items-center justify-center mb-3 min-h-[120px]">
+                                                    <span class="text-xs text-gray-400">No Logo</span>
                                                 </div>
                                             @endif
                                             <div class="text-center">
@@ -101,7 +82,8 @@
             <p class="text-gray-600 dark:text-slate-300 mb-4">
                 Interested in partnering with us for JS TEK 2026?
             </p>
-            <a href="https://phpa.me/partner-program" class="inline-flex items-center text-tek-blue-700 dark:text-tek-blue-400 font-medium">
+            <a href="https://phpa.me/partner-program"
+               class="inline-flex items-center text-tek-blue-700 dark:text-tek-blue-400 font-medium">
                 View Partnership Opportunities
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd"
@@ -186,14 +168,8 @@
 
             // Update logo
             const logoContainer = document.getElementById('modal-sponsor-logo');
-            if (sponsor.logo) {
-                let logoSrc;
-                if (sponsor.logo.startsWith('http')) {
-                    logoSrc = sponsor.logo;
-                } else {
-                    logoSrc = `{{ asset('') }}${sponsor.logo}`;
-                }
-                logoContainer.innerHTML = `<img src="${logoSrc}" alt="${sponsor.name}" class="max-h-24 max-w-full object-contain">`;
+            if (sponsor.logo_url) {
+                logoContainer.innerHTML = `<img src="${sponsor.logo_url}" alt="${sponsor.name}" class="max-h-32 w-auto object-contain" onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\\'text-sm text-gray-500 dark:text-slate-400\\'>Logo unavailable</span>';">`;
             } else {
                 logoContainer.innerHTML = `<span class="text-2xl font-bold text-gray-300 dark:text-slate-500">LOGO</span>`;
             }

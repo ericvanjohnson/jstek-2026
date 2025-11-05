@@ -29,7 +29,7 @@ class PartnersSection extends Component
         $conferenceUuid = config('tek.conference.uuid');
         $conference = Conference::where('uuid', $conferenceUuid)->first();
 
-        if (! $conference) {
+        if (!$conference) {
             return collect();
         }
 
@@ -73,7 +73,7 @@ class PartnersSection extends Component
             'venue' => 'Venue Partners',
             'after-party' => 'After Party Partners',
             'other' => 'Special Partners',
-            default => ucfirst($level).' Partners',
+            default => ucfirst($level) . ' Partners',
         };
     }
 
