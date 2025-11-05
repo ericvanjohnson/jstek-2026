@@ -1,9 +1,9 @@
-import { Head } from '@inertiajs/react';
+import {Head} from '@inertiajs/react';
 
-export default function Welcome({ conference }) {
+export default function Welcome({conference}) {
     return (
         <>
-            <Head title="Welcome" />
+            <Head title="Welcome"/>
 
             <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -16,7 +16,9 @@ export default function Welcome({ conference }) {
                         </p>
 
                         {conference && (
-                            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 max-w-2xl mx-auto">
+                            <div
+                                className="bg-yellow-50 dark:bg-yellow-900/20 border-2 border-yellow-400 rounded-lg shadow-lg p-6 max-w-2xl mx-auto">
+
                                 <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                                     Conference Details
                                 </h2>
