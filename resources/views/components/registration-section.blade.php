@@ -27,7 +27,7 @@
                 <div class="grid md:grid-cols-3 gap-6">
                     <!-- Early Bird 3-Day -->
                     <div
-                        class="bg-white dark:bg-slate-700 rounded-xl shadow-lg overflow-hidden border-t-4 border-tek-orange-700 dark:border-tek-orange-400 relative">
+                        class="bg-white dark:bg-[#1e2332] rounded-xl shadow-lg overflow-hidden border-t-4 border-tek-orange-700 dark:border-tek-orange-400 relative">
                         <div
                             class="absolute top-0 right-0 bg-tek-orange-700 dark:bg-tek-orange-600 text-white text-xs font-bold py-1 px-3 rounded-bl-lg">
                             BEST VALUE
@@ -76,7 +76,7 @@
 
                     <!-- Early Bird 2-Day -->
                     <div
-                        class="bg-white dark:bg-slate-700 rounded-xl shadow-lg overflow-hidden border-t-4 border-tek-blue-700 dark:border-tek-blue-400">
+                        class="bg-white dark:bg-[#1e2332] rounded-xl shadow-lg overflow-hidden border-t-4 border-tek-blue-700 dark:border-tek-blue-400">
                         <div class="p-6">
                             <h4 class="font-bold text-lg mb-2">Early Bird - Two Days</h4>
                             <div class="flex items-baseline mb-4">
@@ -121,7 +121,7 @@
 
                     <!-- Early Bird 1-Day -->
                     <div
-                        class="bg-white dark:bg-slate-700 rounded-xl shadow-lg overflow-hidden border-t-4 border-tek-blue-700 dark:border-tek-blue-400">
+                        class="bg-white dark:bg-[#1e2332] rounded-xl shadow-lg overflow-hidden border-t-4 border-tek-blue-700 dark:border-tek-blue-400">
                         <div class="p-6">
                             <h4 class="font-bold text-lg mb-2">Early Bird - One Day</h4>
                             <div class="flex items-baseline mb-4">
@@ -176,7 +176,7 @@
                 <div class="grid md:grid-cols-3 gap-6">
                     <!-- Full Conference 3-Day -->
                     <div
-                        class="bg-white dark:bg-slate-700 rounded-xl shadow-lg overflow-hidden border-t-4 border-tek-blue-700 dark:border-tek-blue-400 relative">
+                        class="bg-white dark:bg-[#1e2332] rounded-xl shadow-lg overflow-hidden border-t-4 border-tek-blue-700 dark:border-tek-blue-400 relative">
                         <div
                             class="absolute top-0 right-0 bg-tek-blue-700 dark:bg-tek-blue-600 text-white text-xs font-bold py-1 px-3 rounded-bl-lg">
                             POPULAR
@@ -225,7 +225,7 @@
 
                     <!-- Conference 2-Day -->
                     <div
-                        class="bg-white dark:bg-slate-700 rounded-xl shadow-lg overflow-hidden border-t-4 border-tek-blue-700 dark:border-tek-blue-400">
+                        class="bg-white dark:bg-[#1e2332] rounded-xl shadow-lg overflow-hidden border-t-4 border-tek-blue-700 dark:border-tek-blue-400">
                         <div class="p-6">
                             <h4 class="font-bold text-lg mb-2">Conference (2 Days)</h4>
                             <div class="flex items-baseline mb-4">
@@ -270,7 +270,7 @@
 
                     <!-- Conference 1-Day -->
                     <div
-                        class="bg-white dark:bg-slate-700 rounded-xl shadow-lg overflow-hidden border-t-4 border-tek-blue-700 dark:border-tek-blue-400">
+                        class="bg-white dark:bg-[#1e2332] rounded-xl shadow-lg overflow-hidden border-t-4 border-tek-blue-700 dark:border-tek-blue-400">
                         <div class="p-6">
                             <h4 class="font-bold text-lg mb-2">Conference (1 Day)</h4>
                             <div class="flex items-baseline mb-4">
@@ -372,16 +372,16 @@
             </div>
 
             <!-- Group Discounts -->
-            <div class="bg-white dark:bg-slate-700 rounded-xl shadow-md dark:shadow-slate-900/50 p-8">
+            <div class="bg-white dark:bg-[#1e2332] rounded-xl shadow-md dark:shadow-black/50 p-8">
                 <h3 class="font-bold text-xl mb-4">Team & Group Discounts</h3>
                 <p class="text-gray-600 dark:text-slate-300 mb-6">
                     Bringing your whole team? Save on registration with our group rates.
-                    Contact us at <a href="mailto:tek@phparch.com"
-                                     class="text-tek-blue-700 dark:text-tek-blue-400 hover:underline">tek@phparch.com</a>
+                    Contact us at <a href="mailto:info@jstek.io"
+                                     class="text-tek-blue-700 dark:text-tek-blue-400 hover:underline">info@jstek.io</a>
                     for special pricing.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="mailto:tek@phparch.com"
+                    <a href="mailto:info@jstek.io"
                        class="bg-tek-orange-900 dark:bg-tek-orange-600 text-white px-6 py-3 rounded-lg text-center font-medium hover:bg-tek-orange-800 dark:hover:bg-tek-orange-700 transition-all">
                         Contact for Group Rates
                     </a>

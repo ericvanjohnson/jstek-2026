@@ -23,26 +23,48 @@
     --color-zinc-900: #171717;
     --color-zinc-950: #0a0a0a;
 
-    /* Custom PHP Tek colors */
-    --color-tek-blue-100: #d2dfeb;
-    --color-tek-blue-200: #bcd0e1;
-    --color-tek-blue-300: #a5c0d7;
-    --color-tek-blue-400: #8fb1cd;
-    --color-tek-blue-500: #79a1c3;
-    --color-tek-blue-600: #6291b9;
-    --color-tek-blue-700: #4c82af;
-    --color-tek-blue-800: #3672a5;
-    --color-tek-blue-900: #20639B;
+    /* Custom JS Tek colors - JavaScript yellow/golden theme */
+    --color-tek-yellow-100: #fefce8;
+    --color-tek-yellow-200: #fef9c3;
+    --color-tek-yellow-300: #fef08a;
+    --color-tek-yellow-400: #fde047;
+    --color-tek-yellow-500: #facc15;
+    --color-tek-yellow-600: #eab308;
+    --color-tek-yellow-700: #ca8a04;
+    --color-tek-yellow-800: #a16207;
+    --color-tek-yellow-900: #854d0e;
 
-    --color-tek-orange-100: #fbdfd5;
-    --color-tek-orange-200: #f9cfc0;
-    --color-tek-orange-300: #f8bfab;
-    --color-tek-orange-400: #f6b097;
-    --color-tek-orange-500: #f4a082;
-    --color-tek-orange-600: #f3906d;
-    --color-tek-orange-700: #f18058;
-    --color-tek-orange-800: #ef7043;
-    --color-tek-orange-900: #EE612F;
+    /* Accent/secondary colors - dark slate for contrast */
+    --color-tek-slate-100: #e2e8f0;
+    --color-tek-slate-200: #cbd5e1;
+    --color-tek-slate-300: #94a3b8;
+    --color-tek-slate-400: #64748b;
+    --color-tek-slate-500: #475569;
+    --color-tek-slate-600: #334155;
+    --color-tek-slate-700: #1e293b;
+    --color-tek-slate-800: #0f172a;
+    --color-tek-slate-900: #020617;
+
+    /* Legacy aliases for backward compatibility during transition */
+    --color-tek-blue-100: var(--color-tek-slate-100);
+    --color-tek-blue-200: var(--color-tek-slate-200);
+    --color-tek-blue-300: var(--color-tek-slate-300);
+    --color-tek-blue-400: var(--color-tek-slate-400);
+    --color-tek-blue-500: var(--color-tek-slate-500);
+    --color-tek-blue-600: var(--color-tek-slate-600);
+    --color-tek-blue-700: var(--color-tek-slate-700);
+    --color-tek-blue-800: var(--color-tek-slate-800);
+    --color-tek-blue-900: var(--color-tek-slate-900);
+
+    --color-tek-orange-100: var(--color-tek-yellow-100);
+    --color-tek-orange-200: var(--color-tek-yellow-200);
+    --color-tek-orange-300: var(--color-tek-yellow-300);
+    --color-tek-orange-400: var(--color-tek-yellow-400);
+    --color-tek-orange-500: var(--color-tek-yellow-500);
+    --color-tek-orange-600: var(--color-tek-yellow-600);
+    --color-tek-orange-700: var(--color-tek-yellow-700);
+    --color-tek-orange-800: var(--color-tek-yellow-800);
+    --color-tek-orange-900: var(--color-tek-yellow-900);
 
     --color-accent: var(--color-neutral-800);
     --color-accent-content: var(--color-neutral-800);
@@ -54,14 +76,14 @@
         --color-accent: var(--color-white);
         --color-accent-content: var(--color-white);
         --color-accent-foreground: var(--color-neutral-800);
-        
-        /* Enhanced dark mode colors */
-        --color-background-dark: #0f1419;
-        --color-surface-dark: #1a1f2e;
-        --color-surface-elevated-dark: #242938;
-        --color-text-primary-dark: #e2e8f0;
+
+        /* Enhanced dark mode colors - deep navy/charcoal for better contrast with yellow */
+        --color-background-dark: #0a0e1a;
+        --color-surface-dark: #141827;
+        --color-surface-elevated-dark: #1e2332;
+        --color-text-primary-dark: #f1f5f9;
         --color-text-secondary-dark: #94a3b8;
-        --color-border-dark: #334155;
+        --color-border-dark: #2d3748;
     }
 }
 
@@ -135,8 +157,8 @@ body {
 
 :root {
     /* Colors - Light mode */
-    --color-primary: var(--color-tek-orange-900);
-    --color-secondary: var(--color-tek-blue-800);
+    --color-primary: var(--color-tek-yellow-600);
+    --color-secondary: var(--color-tek-slate-800);
     --color-background: #FFFFFF;
     --color-text-primary: #1F2937;
     --color-text-secondary: #4B5563;
@@ -149,10 +171,10 @@ body {
 /* Dark mode overrides */
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-primary: var(--color-tek-orange-500);
-        --color-secondary: var(--color-tek-blue-400);
-        --color-background: #0f1419;
-        --color-text-primary: #e2e8f0;
+        --color-primary: var(--color-tek-yellow-500);
+        --color-secondary: var(--color-tek-slate-400);
+        --color-background: #0a0e1a;
+        --color-text-primary: #f1f5f9;
         --color-text-secondary: #94a3b8;
     }
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS TEK 2026 - The Premier JavaScript Conference</title>
+    <title>JS TEK 2026 - The Inaugural JavaScript Conference</title>
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ config('app.url') }}">
     <meta name="keywords" content="javascript, js, web development, conference"
@@ -16,9 +16,9 @@
     <link rel="shortcut icon" href="{{ asset('/android-chrome-512x512.png') }}" type="image/x-icon">
     <link rel="shortcut icon" href="{{ asset('/apple-touch-icon.png') }}" type="image/x-icon">
     <!-- Primary Meta Tags -->
-    <meta name="title" content="JS TEK 2026 - The Premier JavaScript Conference"/>
+    <meta name="title" content="JS TEK 2026 - The Inaugural JavaScript Conference"/>
     <meta name="description"
-          content="Join us at JS TEK 2026, the premier JavaScript conference featuring expert speakers, hands-on workshops, and networking opportunities.">
+          content="Join us at JS TEK 2026, the inaugural single-track JavaScript conference featuring expert speakers, hands-on workshops, and exceptional networking opportunities.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -34,7 +34,7 @@
     </script>
 </head>
 <body
-        class="font-sans bg-white dark:bg-slate-900 text-gray-900 dark:text-slate-100 transition-colors duration-300 pt-20">
+        class="font-sans bg-white dark:bg-[#0a0e1a] text-gray-900 dark:text-slate-100 transition-colors duration-300 pt-20">
 
 <!-- Fixed navigation -->
 <x-navigation/>

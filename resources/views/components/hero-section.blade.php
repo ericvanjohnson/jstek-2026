@@ -11,14 +11,13 @@
                         {{ $conference ? $conference->getFormattedDateRange() : 'May 19-21, 2026' }}
                     </span>
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
-                        The Premier <span class="text-tek-orange-900 dark:text-tek-orange-400">JavaScript</span> Conference of
+                        The Inaugural <span class="text-tek-orange-900 dark:text-tek-orange-400">JavaScript</span> Conference of
                         2026
                     </h1>
                 </div>
                 <p class="text-gray-600 dark:text-slate-300 text-lg md:text-xl max-w-xl">
-                    Join us for 3 days of multiple track expert-led sessions, hands-on workshops, and unparalleled
-                    networking
-                    opportunities with the JavaScript community.
+                    Join us for 3 days of single-track expert-led sessions, hands-on workshops, and unparalleled
+                    networking opportunities with the JavaScript community.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#register"

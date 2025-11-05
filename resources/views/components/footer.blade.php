@@ -1,6 +1,6 @@
 <!-- Footer -->
 <footer
-    class="bg-white dark:bg-slate-800 py-12 border-t border-gray-200 dark:border-slate-700 transition-colors duration-300">
+    class="bg-white dark:bg-[#141827] py-12 border-t border-gray-200 dark:border-slate-700 transition-colors duration-300">
     <div class="container mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div class="md:col-span-1">
@@ -10,7 +10,7 @@
                         class="ml-1 bg-tek-orange-900 dark:bg-tek-orange-600 text-white text-xs font-bold py-1 px-2 rounded">2026</span>
                 </a>
                 <p class="text-gray-600 dark:text-slate-300 text-sm mb-6">
-                    The premier JavaScript conference of 2026, bringing together developers, experts, and community leaders.
+                    The inaugural JavaScript conference of 2026, bringing together developers, experts, and community leaders.
                 </p>
                 <div class="flex space-x-4">
                     <a href="https://x.com/phptek"
@@ -132,8 +132,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
-                        <span class="text-gray-600 dark:text-slate-300"><a href="mailto:tek@phparch.com"
-                                                                           target="_blank">tek@phparch.com</a></span>
+                        <span class="text-gray-600 dark:text-slate-300"><a href="mailto:info@jstek.io"
+                                                                           target="_blank">info@jstek.io</a></span>
                     </li>
                     <li class="flex items-start">
                         <svg xmlns="http://www.w3.org/2000/svg"

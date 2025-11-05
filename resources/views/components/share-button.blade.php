@@ -108,7 +108,7 @@
 
 <script>
     function shareOnX() {
-        const siteTitle = 'JS TEK 2026 - The Premier JavaScript Conference';
+        const siteTitle = 'JS TEK 2026 - The Inaugural JavaScript Conference';
         const siteUrl = window.location.href;
         const text = encodeURIComponent(`Check out ${siteTitle}! 🚀`);
         const url = encodeURIComponent(siteUrl);
@@ -116,14 +116,14 @@
     }
 
     function shareOnBluesky() {
-        const siteTitle = 'JS TEK 2026 - The Premier JavaScript Conference';
+        const siteTitle = 'JS TEK 2026 - The Inaugural JavaScript Conference';
         const siteUrl = window.location.href;
         const text = encodeURIComponent(`Check out ${siteTitle}! 🚀\n\n${siteUrl}`);
         window.open(`https://bsky.app/intent/compose?text=${text}`, '_blank');
     }
 
     function shareOnMastodon() {
-        const siteTitle = 'JS TEK 2026 - The Premier JavaScript Conference';
+        const siteTitle = 'JS TEK 2026 - The Inaugural JavaScript Conference';
         const siteUrl = window.location.href;
         const text = encodeURIComponent(`Check out ${siteTitle}! 🚀\n\n${siteUrl}`);
         // Opens the default Mastodon instance - users can change the instance if needed
@@ -137,7 +137,7 @@
     }
 
     function shareOnLinkedIn() {
-        const siteTitle = 'JS TEK 2026 - The Premier JavaScript Conference';
+        const siteTitle = 'JS TEK 2026 - The Inaugural JavaScript Conference';
         const siteUrl = window.location.href;
         const url = encodeURIComponent(siteUrl);
         const title = encodeURIComponent(siteTitle);
@@ -145,10 +145,10 @@
     }
 
     function shareViaEmail() {
-        const siteTitle = 'JS TEK 2026 - The Premier JavaScript Conference';
+        const siteTitle = 'JS TEK 2026 - The Inaugural JavaScript Conference';
         const siteUrl = window.location.href;
         const subject = encodeURIComponent(siteTitle);
-        const body = encodeURIComponent(`I wanted to share this with you: ${siteTitle}\n\n${siteUrl}\n\nJoin us for the premier JavaScript conference featuring expert speakers, hands-on workshops, and networking opportunities!`);
+        const body = encodeURIComponent(`I wanted to share this with you: ${siteTitle}\n\n${siteUrl}\n\nJoin us for the inaugural single-track JavaScript conference featuring expert speakers, hands-on workshops, and exceptional networking opportunities!`);
         window.location.href = `mailto:?subject=${subject}&body=${body}`;
     }
 

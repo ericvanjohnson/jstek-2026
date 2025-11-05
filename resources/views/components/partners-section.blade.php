@@ -1,5 +1,5 @@
 <!-- Partners section -->
-<section id="partners" class="py-20 bg-gray-50 dark:bg-slate-800 transition-colors duration-300">
+<section id="partners" class="py-20 bg-gray-50 dark:bg-[#141827] transition-colors duration-300">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Our Partners</h2>
@@ -17,7 +17,7 @@
                             <div class="flex justify-center">
                                 @foreach($sponsors as $sponsor)
                                     <div
-                                        class="bg-white dark:bg-slate-700 rounded-xl shadow-md dark:shadow-slate-900/50 {{ $getCardClasses($level) }} cursor-pointer transition-transform hover:scale-105"
+                                        class="bg-white dark:bg-[#1e2332] rounded-xl shadow-md dark:shadow-black/50 {{ $getCardClasses($level) }} cursor-pointer transition-transform hover:scale-105"
                                         onclick="openSponsorModal('{{ $sponsor->uuid }}')"
                                         data-sponsor-uuid="{{ $sponsor->uuid }}">
                                         <div class="flex flex-col items-center justify-center h-full">
@@ -56,7 +56,7 @@
                             <div class="grid {{ $getGridClasses($level) }} gap-6 justify-items-center" style="max-width: fit-content;">
                                 @foreach($sponsors as $sponsor)
                                     <div
-                                        class="bg-white dark:bg-slate-700 rounded-xl shadow-md dark:shadow-slate-900/50 {{ $getCardClasses($level) }} cursor-pointer transition-transform hover:scale-105"
+                                        class="bg-white dark:bg-[#1e2332] rounded-xl shadow-md dark:shadow-black/50 {{ $getCardClasses($level) }} cursor-pointer transition-transform hover:scale-105"
                                         onclick="openSponsorModal('{{ $sponsor->uuid }}')"
                                         data-sponsor-uuid="{{ $sponsor->uuid }}">
                                         <div class="flex flex-col items-center justify-center h-full">
@@ -116,7 +116,7 @@
     <div id="sponsor-modal" class="fixed inset-0 bg-black/50 z-50 hidden flex items-center justify-center p-4"
          onclick="closeSponsorModal()">
         <div
-            class="bg-white dark:bg-slate-800 rounded-lg shadow-xl w-full max-w-2xl max-h-[90vh] overflow-hidden flex flex-col"
+            class="bg-white dark:bg-[#1e2332] rounded-lg shadow-xl w-full max-w-2xl max-h-[90vh] overflow-hidden flex flex-col"
             onclick="event.stopPropagation()">
             <!-- Header -->
             <div

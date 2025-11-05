@@ -10,7 +10,7 @@
 
         <!-- Speaker benefits section -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md text-center">
+            <div class="bg-white dark:bg-[#1e2332] p-6 rounded-lg shadow-md text-center">
                 <div class="text-tek-orange-900 dark:text-tek-orange-600 text-4xl mb-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -20,7 +20,7 @@
                 <p class="text-gray-600 dark:text-slate-300">We'll cover your flight to and from the conference.</p>
             </div>
 
-            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md text-center">
+            <div class="bg-white dark:bg-[#1e2332] p-6 rounded-lg shadow-md text-center">
                 <div class="text-tek-orange-900 dark:text-tek-orange-600 text-4xl mb-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -30,7 +30,7 @@
                 <p class="text-gray-600 dark:text-slate-300">Enjoy complimentary accommodation during the conference.</p>
             </div>
 
-            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md text-center">
+            <div class="bg-white dark:bg-[#1e2332] p-6 rounded-lg shadow-md text-center">
                 <div class="text-tek-orange-900 dark:text-tek-orange-600 text-4xl mb-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />

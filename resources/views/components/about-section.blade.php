@@ -1,5 +1,5 @@
 <!-- About section -->
-<section id="about" class="py-20 bg-gray-50 dark:bg-slate-800 transition-colors duration-300 relative overflow-hidden">
+<section id="about" class="py-20 bg-gray-50 dark:bg-[#141827] transition-colors duration-300 relative overflow-hidden">
     <!-- Decorative background circles -->
     <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div
@@ -14,13 +14,13 @@
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">About JS TEK 2026</h2>
             <p class="text-gray-600 dark:text-slate-300 max-w-2xl mx-auto">
-                The premier JavaScript conference focused on modern development, best practices, and emerging technologies.
+                The inaugural single-track JavaScript conference focused on modern web development, frameworks, tooling, and emerging technologies. A focused co-event alongside PHP TEK, bringing together JavaScript developers from across the ecosystem.
             </p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
             <div
-                class="bg-white dark:bg-slate-700 rounded-xl shadow-md dark:shadow-slate-900/50 p-8 transition-transform hover:-translate-y-1 duration-300">
+                class="bg-white dark:bg-[#1e2332] rounded-xl shadow-md dark:shadow-black/50 p-8 transition-transform hover:-translate-y-1 duration-300">
                 <div
                     class="w-14 h-14 bg-tek-blue-100 dark:bg-tek-blue-800/20 rounded-lg flex items-center justify-center mb-6">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-tek-blue-700 dark:text-tek-blue-400"
@@ -31,12 +31,12 @@
                 </div>
                 <h3 class="text-xl font-bold mb-3">Expert Speakers</h3>
                 <p class="text-gray-600 dark:text-slate-300">
-                    Learn from 25+ industry experts and JavaScript core developers sharing their knowledge and experience.
+                    Learn from 15+ industry experts and JavaScript thought leaders sharing their knowledge and experience.
                 </p>
             </div>
 
             <div
-                class="bg-white dark:bg-slate-700 rounded-xl shadow-md dark:shadow-slate-900/50 p-8 transition-transform hover:-translate-y-1 duration-300">
+                class="bg-white dark:bg-[#1e2332] rounded-xl shadow-md dark:shadow-black/50 p-8 transition-transform hover:-translate-y-1 duration-300">
                 <div
                     class="w-14 h-14 bg-tek-blue-100 dark:bg-tek-blue-800/20 rounded-lg flex items-center justify-center mb-6">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-tek-blue-700 dark:text-tek-blue-400"
@@ -47,12 +47,12 @@
                 </div>
                 <h3 class="text-xl font-bold mb-3">Hands-on Workshops</h3>
                 <p class="text-gray-600 dark:text-slate-300">
-                    Participate in intensive workshops on advanced JavaScript techniques, frameworks, and tooling.
+                    Participate in intensive workshops covering React, Vue, Node.js, TypeScript, and modern JavaScript tooling.
                 </p>
             </div>
 
             <div
-                class="bg-white dark:bg-slate-700 rounded-xl shadow-md dark:shadow-slate-900/50 p-8 transition-transform hover:-translate-y-1 duration-300">
+                class="bg-white dark:bg-[#1e2332] rounded-xl shadow-md dark:shadow-black/50 p-8 transition-transform hover:-translate-y-1 duration-300">
                 <div
                     class="w-14 h-14 bg-tek-blue-100 dark:bg-tek-blue-800/20 rounded-lg flex items-center justify-center mb-6">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-tek-blue-700 dark:text-tek-blue-400"
@@ -64,26 +64,26 @@
                 </div>
                 <h3 class="text-xl font-bold mb-3">Networking Opportunities</h3>
                 <p class="text-gray-600 dark:text-slate-300">
-                    Connect with 200+ JavaScript developers, community leaders, and industry professionals.
+                    Connect with 150+ JavaScript developers, community leaders, and industry professionals.
                 </p>
             </div>
         </div>
 
         <div class="mt-16 grid md:grid-cols-4 gap-6 text-center">
             <div class="p-6">
-                <div class="text-4xl font-bold text-tek-orange-900 dark:text-tek-orange-400 mb-2">25+</div>
+                <div class="text-4xl font-bold text-tek-orange-900 dark:text-tek-orange-400 mb-2">15+</div>
                 <p class="text-gray-600 dark:text-slate-300">Expert Speakers</p>
             </div>
             <div class="p-6">
-                <div class="text-4xl font-bold text-tek-blue-800 dark:text-tek-blue-400 mb-2">30+</div>
+                <div class="text-4xl font-bold text-tek-blue-800 dark:text-tek-blue-400 mb-2">18+</div>
                 <p class="text-gray-600 dark:text-slate-300">Technical Sessions</p>
             </div>
             <div class="p-6">
-                <div class="text-4xl font-bold text-tek-orange-900 dark:text-tek-orange-400 mb-2">6</div>
+                <div class="text-4xl font-bold text-tek-orange-900 dark:text-tek-orange-400 mb-2">3</div>
                 <p class="text-gray-600 dark:text-slate-300">Hands-on Workshops</p>
             </div>
             <div class="p-6">
-                <div class="text-4xl font-bold text-tek-blue-800 dark:text-tek-blue-400 mb-2">200+</div>
+                <div class="text-4xl font-bold text-tek-blue-800 dark:text-tek-blue-400 mb-2">150+</div>
                 <p class="text-gray-600 dark:text-slate-300">Attendees</p>
             </div>
         </div>
