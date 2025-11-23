@@ -11,7 +11,7 @@
         <div class="space-y-12">
             @foreach($sponsorsByLevel as $level => $sponsors)
                 <div class="text-center">
-                    <h3 class="text-xl font-bold mb-6">{{ $getLevelDisplayName($level) }}</h3>
+                    <h3 class="text-xl font-bold mb-6 mt-4">{{ $getLevelDisplayName($level) }}</h3>
                     <div class="flex justify-center">
                         @if(count($sponsors) === 1)
                             <div class="flex justify-center">
@@ -21,26 +21,14 @@
                                         onclick="openSponsorModal('{{ $sponsor->uuid }}')"
                                         data-sponsor-uuid="{{ $sponsor->uuid }}">
                                         <div class="flex flex-col items-center justify-center h-full">
-
-                                            @if($sponsor->logo)
-                                                @if(str_starts_with($sponsor->logo, 'http'))
-                                                    <img src="{{ $sponsor->logo }}" alt="{{ $sponsor->name }}"
-                                                         class="max-h-16 max-w-full object-contain mb-2">
-                                                @elseif(file_exists(public_path($sponsor->logo)))
-                                                    <img src="{{ asset($sponsor->logo) }}" alt="{{ $sponsor->name }}"
-                                                         class="max-h-16 max-w-full object-contain mb-2">
-                                                @else
-                                                    <div
-                                                        class="w-16 h-16 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-2">
-                                                        <span
-                                                            class="text-xs font-bold text-gray-500 dark:text-slate-400">LOGO</span>
-                                                    </div>
-                                                @endif
+                                            @if($sponsor->logo_url)
+                                                <img src="{{ $sponsor->logo_url }}" alt="{{ $sponsor->name }}"
+                                                     class="{{ $getLogoClasses($level, true) }}">
                                             @else
                                                 <div
-                                                    class="w-16 h-16 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-2">
+                                                    class="w-32 h-32 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-3">
                                                     <span
-                                                        class="text-xs font-bold text-gray-500 dark:text-slate-400">LOGO</span>
+                                                        class="text-sm font-bold text-gray-500 dark:text-slate-400">LOGO</span>
                                                 </div>
                                             @endif
                                             <div class="text-center">
@@ -63,7 +51,7 @@
                                         <div class="flex flex-col items-center justify-center h-full">
                                             @if($sponsor->logo_url)
                                                 <img src="{{ $sponsor->logo_url }}" alt="{{ $sponsor->name }}"
-                                                     class="max-h-40 max-w-full object-contain mb-3">
+                                                     class="{{ $getLogoClasses($level, false) }}">
                                             @else
                                                 <div
                                                     class="w-32 h-32 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-3">

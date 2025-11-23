@@ -96,11 +96,19 @@ class PartnersSection extends Component
     public function getCardClasses(string $level): string
     {
         return match ($level) {
-            'platinum' => 'p-8 h-32',
-            'gold' => 'p-6 h-24',
-            'silver', 'bronze' => 'p-4 h-20',
-            default => 'p-3 h-16',
+            'platinum' => 'p-2 h-32',
+            'gold' => 'p-2 h-24',
+            'silver', 'bronze' => 'p-2 h-20',
+            default => 'p-2 h-16',
         };
+    }
+
+    /**
+     * Get the logo size classes for a sponsorship level.
+     */
+    public function getLogoClasses(string $level, bool $isSingleSponsor = false): string
+    {
+        return 'max-h-32 max-w-64 object-contain mt-2 mb-2';
     }
 
     /**
