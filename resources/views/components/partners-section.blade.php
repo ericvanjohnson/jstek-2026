@@ -17,19 +17,30 @@
                             <div class="flex justify-center">
                                 @foreach($sponsors as $sponsor)
                                     <div
-                                        class="bg-white dark:bg-[#1e2332] rounded-xl shadow-md dark:shadow-black/50 {{ $getCardClasses($level) }} cursor-pointer transition-transform hover:scale-105"
+                                        class="bg-gray-100 dark:bg-slate-700 rounded-xl shadow-md dark:shadow-slate-900/50 {{ $getCardClasses($level) }} cursor-pointer transition-transform hover:scale-105"
                                         onclick="openSponsorModal('{{ $sponsor->uuid }}')"
                                         data-sponsor-uuid="{{ $sponsor->uuid }}">
-                                        <div class="flex flex-col items-center justify-center p-4 h-full">
-                                            @if($sponsor->logo_url)
-                                                <div class="w-full flex items-center justify-center mb-3 min-h-[120px]">
-                                                    <img src="{{ $sponsor->logo_url }}"
-                                                         alt="{{ $sponsor->name }}"
-                                                         class="max-h-28 w-auto object-contain">
-                                                </div>
+                                        <div class="flex flex-col items-center justify-center h-full">
+
+                                            @if($sponsor->logo)
+                                                @if(str_starts_with($sponsor->logo, 'http'))
+                                                    <img src="{{ $sponsor->logo }}" alt="{{ $sponsor->name }}"
+                                                         class="max-h-16 max-w-full object-contain mb-2">
+                                                @elseif(file_exists(public_path($sponsor->logo)))
+                                                    <img src="{{ asset($sponsor->logo) }}" alt="{{ $sponsor->name }}"
+                                                         class="max-h-16 max-w-full object-contain mb-2">
+                                                @else
+                                                    <div
+                                                        class="w-16 h-16 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-2">
+                                                        <span
+                                                            class="text-xs font-bold text-gray-500 dark:text-slate-400">LOGO</span>
+                                                    </div>
+                                                @endif
                                             @else
-                                                <div class="w-full flex items-center justify-center mb-3 min-h-[120px]">
-                                                    <span class="text-xs text-gray-400">No Logo</span>
+                                                <div
+                                                    class="w-16 h-16 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-2">
+                                                    <span
+                                                        class="text-xs font-bold text-gray-500 dark:text-slate-400">LOGO</span>
                                                 </div>
                                             @endif
                                             <div class="text-center">
@@ -43,23 +54,21 @@
                                 @endforeach
                             </div>
                         @else
-                            <div class="grid {{ $getGridClasses($level) }} gap-6 justify-items-center"
-                                 style="max-width: fit-content;">
+                            <div class="flex flex-wrap justify-center gap-6">
                                 @foreach($sponsors as $sponsor)
                                     <div
-                                        class="bg-white dark:bg-[#1e2332] rounded-xl shadow-md dark:shadow-black/50 {{ $getCardClasses($level) }} cursor-pointer transition-transform hover:scale-105"
+                                        class="bg-gray-100 dark:bg-slate-700 rounded-xl shadow-md dark:shadow-slate-900/50 {{ $getCardClasses($level) }} cursor-pointer transition-transform hover:scale-105"
                                         onclick="openSponsorModal('{{ $sponsor->uuid }}')"
                                         data-sponsor-uuid="{{ $sponsor->uuid }}">
-                                        <div class="flex flex-col items-center justify-center p-4 h-full">
+                                        <div class="flex flex-col items-center justify-center h-full">
                                             @if($sponsor->logo_url)
-                                                <div class="w-full flex items-center justify-center mb-3 min-h-[120px]">
-                                                    <img src="{{ $sponsor->logo_url }}"
-                                                         alt="{{ $sponsor->name }}"
-                                                         class="max-h-28 w-auto object-contain">
-                                                </div>
+                                                <img src="{{ $sponsor->logo_url }}" alt="{{ $sponsor->name }}"
+                                                     class="max-h-40 max-w-full object-contain mb-3">
                                             @else
-                                                <div class="w-full flex items-center justify-center mb-3 min-h-[120px]">
-                                                    <span class="text-xs text-gray-400">No Logo</span>
+                                                <div
+                                                    class="w-32 h-32 bg-gray-200 dark:bg-slate-600 rounded-lg flex items-center justify-center mb-3">
+                                                    <span
+                                                        class="text-sm font-bold text-gray-500 dark:text-slate-400">LOGO</span>
                                                 </div>
                                             @endif
                                             <div class="text-center">
